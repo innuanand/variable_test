@@ -1,0 +1,13 @@
+---
+- name: This is a hello-world example
+  hosts: all 
+  
+  tasks:
+      
+    - name: list server hostname
+      shell: "uname -a"
+      register: hostname_machine
+
+    - debug:
+        msg: "hostname on machine  is {{ hostname_machine }}. {{ inventory_hostname }} "
+
