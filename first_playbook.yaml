@@ -5,7 +5,7 @@
   tasks:
       
     - name: list server hostname
-      shell: "uname -a"
+      shell: "uname -n"
       register: hostname_machine
 
     - debug:
