@@ -9,5 +9,5 @@
       register: hostname_machine
 
     - debug:
-        msg: "hostname on machine  is {{ hostname_machine }}. {{ inventory_hostname }} "
+        msg: "hostname on machine  is {{ set_at }}. {{ inventory_hostname }} "
 
