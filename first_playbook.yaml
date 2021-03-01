@@ -9,5 +9,5 @@
       register: hostname_machine
 
     - debug:
-        msg: "hostname is {{ fqdn }}.  Varibale is set at  {{ set_at }}. Inventory_hostname is  {{ inventory_hostname }} "
+        msg: "hostname is {{ fqdn }}.  Varibale is set at  {{ cred }}. Inventory_hostname is  {{ inventory_hostname }} "
 
